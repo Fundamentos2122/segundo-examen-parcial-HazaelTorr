@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/framework.css">
+    <title>Modal</title>
+</head>
+<body>
+    <div class="modal" id="modal_test">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Encabezado</h5>
+                <button data-dismiss="#modal_test">x</button>
+            </div> 
+            <div class="modal-body">
+                Cuerpo <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit soluta, vitae temporibus officia consequatur consectetur modi ipsa voluptate explicabo totam cumque placeat quia dolorum iure ullam, alias facere ea rem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima cumque cupiditate, at iure aliquam tempora nemo soluta numquam sed aperiam? Laboriosam hic non veritatis quam, inventore culpa architecto nostrum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam cum eaque facilis incidunt provident corporis necessitatibus aut ullam. Amet, pariatur! Accusantium iure odio labore cumque dignissimos corrupti reprehenderit alias ullam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet modi voluptatem officia doloribus assumenda quas perspiciatis. Provident unde placeat quaerat aliquam veritatis delectus sint, similique eaque dolores corporis asperiores sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos deserunt pariatur maxime ullam a quo adipisci dolorum rerum praesentium ea eaque quaerat, eius molestias debitis exercitationem nihil nesciunt dolore?
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-dismiss="#modal_test">close</button>
+                <button class="btn btn-info">save change</button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary">
+        Hola Mundo
+    </div>
+
+    <button class="btn btn-success" data-toggle="modal" data-target="#modal_test">Abrir modal 1</button>
+
+    <button class="btn btn-success" data-toggle="modal" data-target="#otro_modal">Abrir modal 2</button>
+
+    <script src="/js/framework.js"></script>
+</body>
+</html>

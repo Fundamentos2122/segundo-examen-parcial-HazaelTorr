@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/framework.css">
+    <title>Lista de tareas</title>
+</head>
+<body class="center_items bg-light">
+
+    <div class="modal col-12 col-sm-12" id="modal_test">
+        <div class="modal-content">
+            <div class="modal-header center_items">
+                <h4><b>Agregar tarea</b></h4>
+                <button class="btn-close" data-dismiss="#modal_test" >x</button>
+            </div>
+            <div class="modal-body">
+                <div class="message-error">
+                    <label>Campos incompletos</label>
+                </div>
+                <div>
+                    <form action="" name="tareaForm">
+                        <span class="space_between_items aling-items-center">
+                            <label class="col-4 col-sm-4" for="titulo">Título</label>
+                            <input class="col-8 col-sm-8 input_text" type="text" name="titulo" id="" required>
+                            <br>
+                        </span>
+                        <span class="space_between_items aling-items-center">
+                            <label class="col-4 col-sm-4" for="descrip">Descripción</label>
+                            <textarea class="col-8 col-sm-8 input_text" name="descrip" id="" cols="30" rows="2"></textarea>
+                            <br>
+                        </span>
+                        <span class="space_between_items aling-items-center">
+                            <label class="col-4 col-sm-4" for="fecha">Fecha</label>
+                            <input class="col-8 col-sm-8 input_text" type="date" name="fecha" id="" required>
+                            <br>
+                        </span>
+                        <span class="modal-footer">
+                            <input class="btn btn-success" type="submit" name="guardar" id="" value="Guardar">
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+                <input class="btn btn-success" type="submit" name="guardar" id="" value="Guardar">
+            </div> -->
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="col-12 col-sm-12 bg-info">
+            <h1 class="text-light">Lista de<br>Tareas</h1>
+        </div>
+
+        <div class="space_between_items col-12 col-sm-12 bg-white padding_container">
+            <div class="dropdown">
+                <input class="dropdown-toggle navbar-toggle" type="checkbox" name="view_list" id="">
+                <label for="view_list">Ver todos</label>
+            </div>
+            <div>
+                <button class="btn btn-info" data-toggle="modal" data-target="#modal_test">Nueva</button>
+            </div>
+        </div>
+        <!-- dropdown-menu -->
+        <div id="tareas" class=" col-12 bg-white">
+            <!-- <div class="col-12 col-sm-12 border-top border-secondary">
+                <div class="row space_between_items aling-items-start">
+                    <h4 class="col-8 col-sm-8" >Titulo de la tarea</h4>
+                    <p class="col-4 col-sm-4 date-text padding_right">01/01/2021</p>
+                </div>
+                <div class="col-12 col-sm-12 padding_container">
+                    <p class="">Descripción de la tarea lorem</p>
+                </div>
+                <div >
+                    <div class="col-12 col-sm-12 aling-items-end">
+                        <label for="comp">Completada</label>
+                        <input type="checkbox" name="comp">
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        </div>
+    </div>
+</div>
+
+    <script src="/js/framework.js"></script>
+</body>
+</html>
