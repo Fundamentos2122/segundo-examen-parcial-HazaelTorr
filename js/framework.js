@@ -106,6 +106,7 @@ function showTareas() {
     let tareas = getTarea();
 
     let index = 0;
+    
     tareas.forEach(arrayInfo, index => {
         //Crear nuevo elemento
         const nuevaTarea = document.createElement("div");
