@@ -117,10 +117,10 @@ function showTareas() {
             `<div id="complete">
                 <div class="row space_between_items aling-items-start">
                     <h4 class="col-8 col-sm-8" >${arrayInfo[index]}</h4>
-                    <p class="col-4 col-sm-4 date-text padding_right">${arrayInfo[index+1]}</p>
+                    <p class="col-4 col-sm-4 date-text padding_right">${arrayInfo[index]}</p>
                 </div>
                 <div class="col-12 col-sm-12 padding_container">
-                    <p class="">${arrayInfo[index-1]}</p>
+                    <p class="">${arrayInfo[index]}</p>
                 </div>
                 <div >
                     <div class="col-12 col-sm-12 aling-items-end">
